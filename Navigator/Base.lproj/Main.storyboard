@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="c3p-x4-J12">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="0ye-Ur-aRA">
     <device id="retina3_5" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -10,10 +10,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--One View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Navigator" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="OneViewController" customModule="Navigator" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -57,10 +57,97 @@
             </objects>
             <point key="canvasLocation" x="378.75" y="130"/>
         </scene>
-        <!--View Controller-->
+        <!--KEY-->
+        <scene sceneID="A6t-sQ-41p">
+            <objects>
+                <viewController id="494-Bw-Ex2" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="bnn-ff-aC2"/>
+                        <viewControllerLayoutGuide type="bottom" id="6Vd-pO-T6E"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="jaH-nZ-KTJ">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.41960784309999999" green="0.80000000000000004" blue="0.89411764709999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="KEY" image="key.png" id="s6Y-Vd-uW7"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qBi-tg-eZR" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1121" y="-560"/>
+        </scene>
+        <!--SAVE-->
+        <scene sceneID="e8q-gt-Ce5">
+            <objects>
+                <viewController id="zi1-1I-X5t" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="puy-YJ-nOe"/>
+                        <viewControllerLayoutGuide type="bottom" id="ebU-hr-QHu"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="CMK-6k-ihf">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="landImg.png" translatesAutoresizingMaskIntoConstraints="NO" id="DhI-zs-1nv">
+                                <rect key="frame" x="40" y="84" width="240" height="128"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="DhI-zs-1nv" firstAttribute="top" secondItem="puy-YJ-nOe" secondAttribute="bottom" constant="64" id="2tV-1g-uWI"/>
+                            <constraint firstItem="DhI-zs-1nv" firstAttribute="centerX" secondItem="CMK-6k-ihf" secondAttribute="centerX" id="7zE-XF-WKk"/>
+                            <constraint firstItem="DhI-zs-1nv" firstAttribute="leading" secondItem="CMK-6k-ihf" secondAttribute="leadingMargin" constant="24" id="kwI-C7-L3X"/>
+                            <constraint firstItem="ebU-hr-QHu" firstAttribute="top" secondItem="DhI-zs-1nv" secondAttribute="bottom" constant="219" id="lzr-Jt-mQs"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="SAVE" image="investment.png" id="y47-12-hkf"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0Gf-rn-KqO" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1121" y="-1235"/>
+        </scene>
+        <!--PLANT-->
+        <scene sceneID="lc5-8I-SMm">
+            <objects>
+                <viewController id="HT2-4t-ehw" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="VIm-9n-xAd"/>
+                        <viewControllerLayoutGuide type="bottom" id="Jay-7V-Wsi"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="4xg-vz-LCj">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="PLANT" image="saving.png" id="aa5-7R-NhG"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YnC-oS-E4U" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="116" y="-1590"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="rZJ-pr-pQn">
+            <objects>
+                <tabBarController id="0ye-Ur-aRA" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="HUr-Fk-Ng8">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="zi1-1I-X5t" kind="relationship" relationship="viewControllers" id="k3m-bF-Jwo"/>
+                        <segue destination="494-Bw-Ex2" kind="relationship" relationship="viewControllers" id="K5D-fJ-hLx"/>
+                        <segue destination="HT2-4t-ehw" kind="relationship" relationship="viewControllers" id="0Ei-4E-hRt"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="f6q-zG-1uL" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="109" y="-900"/>
+        </scene>
+        <!--Two View Controller-->
         <scene sceneID="kGH-KJ-El7">
             <objects>
-                <viewController id="yTm-FT-qdX" sceneMemberID="viewController">
+                <viewController id="yTm-FT-qdX" customClass="TwoViewController" customModule="Navigator" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Ux0-lz-8Sv"/>
                         <viewControllerLayoutGuide type="bottom" id="cyE-Af-h3g"/>
@@ -104,4 +191,10 @@
             <point key="canvasLocation" x="-372" y="130"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="investment.png" width="32" height="32"/>
+        <image name="key.png" width="32" height="32"/>
+        <image name="landImg.png" width="564" height="564"/>
+        <image name="saving.png" width="32" height="32"/>
+    </resources>
 </document>
